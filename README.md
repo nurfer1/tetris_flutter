@@ -1,27 +1,26 @@
-# tetris_flutter
-Tetris Oyunu
-Bu, Flutter kullanarak oluşturduğum bir Tetris oyunudur. Oyun, kullanıcının blokları döndürüp yere düşürdüğü klasik Tetris oyununu simüle eder.
+[![Test](https://github.com/andnexus/flutter_tetris/actions/workflows/test.yml/badge.svg)](https://github.com/andnexus/flutter_tetris/actions/workflows/test.yml)
+[![Publish](https://github.com/andnexus/flutter_tetris/actions/workflows/publish.yml/badge.svg)](https://github.com/andnexus/flutter_tetris/actions/workflows/publish.yml)
 
-Başlarken
-Bu oyunu kendi bilgisayarınızda oynamak için aşağıdaki adımları takip edebilirsiniz.
+# Tetris for Flutter
 
-Gereksinimler
-Flutter SDK
-Android Studio veya Visual Studio Code gibi bir IDE
-Kurulum
-Bu depoyu klonlayın: git clone https://github.com/nurfer1/tetris_flutter
-Proje dizinine gidin: cd tetris
-Gerekli paketleri yükleyin: flutter pub get
-Oyunu çalıştırın: flutter run
-Nasıl Oynanır
-Oyun, üstten aşağı doğru ilerleyen blokların yerleştirilmesi üzerine kuruludur.
-Bloklar farklı şekillerde ve boyutlarda gelir.
-Blokları hareket ettirmek için, sağa ve sola doğru hareket etmek için sağ ve sol ok tuşlarını kullanabilirsiniz.
-Blokları döndürmek için yukarı ok tuşuna basabilirsiniz.
-Aşağı ok tuşuna basarak blokları hızlandırabilirsiniz.
-Bloklar yere çarptığında oyun biter.
-Katkıda Bulunma
-Bu oyun geliştirilmeye açıktır. Herhangi bir hata veya öneriniz varsa, lütfen bir PR gönderin.
+[Tetris](https://harddrop.com/wiki/Gameplay_overview) implementation
+with [SRS](https://harddrop.com/wiki/SRS)
+and [wall kicks](https://harddrop.com/wiki/SRS#Wall_Kicks)
+. [Try it](https://andnexus.github.io/flutter_tetris/). 
 
-Lisans
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakın.
+[![gameplay](assets/tetris.gif)](https://andnexus.github.io/flutter_tetris/)
+
+## Controls
+
+Control Tetrominos with keyboard or gestures.
+
+| Action                  | Key   | Gesture                 |
+|-------------------------|-------|-------------------------|
+| move right              |   →   | swipe right             |
+| move left               |   ←   | swipe left              |
+| rotate right            |   D   | tap right               |
+| rotate left             |   A   | tap left                |
+| hold                    |   ↑   | swipe up                |
+| soft drop               |   ↓   | hold and swipe down     |
+| hard drop               | SPACE | swipe down              |
+| Restart                 |  ESC  |                         |
